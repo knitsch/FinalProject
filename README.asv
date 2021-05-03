@@ -1,0 +1,4 @@
+# FinalProject
+3 Dimensional Vector Field Gui
+
+This is a gui that takes in 3 functions of x,y,z for the i j and k components of a vector field, and it plots the 3 dimensional vector field accordingly. Enter the functions in proper matlab 
