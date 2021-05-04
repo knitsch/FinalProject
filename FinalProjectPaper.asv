@@ -4,16 +4,16 @@ Professor Lanik
 5/3/2021
 Final Project
 	My final project was to create a GUI interface that takes function 
-inputs for the i, j, and k components of a 3 dimensional vector field, that
- then plots those functions as a quiver3 function. I had a few LA’s sign 
-off on my project due to time worries: Ryan Martz, Laurel Hilger, and Thien
- An Cao. Overall, I was happy with the result, and I am satisfied to have 
-created something extremely applicable in my current classes. 
+inputs for the i, j, and k components of a 3-dimensional vector field, that
+then plots those functions as a quiver3 function. LA Ryan Martz signed 
+off on my project. Overall, I was happy with the result, and I am 
+satisfied to have created something extremely applicable in my current 
+classes. 
 	The code has four functions. The main function sets up the figure, the
- blank quiver3 plot, the pushbuttons to plot and clear the graph, and the 
+blank quiver3 plot, the pushbuttons to plot and clear the graph, and the 
 slider. The three other functions are all callback functions referenced in
- the main function. The hardest function to code was the plot function, and
- the other two were the resize (zoom), and clear functions. The plot 
+the main function. The hardest function to code was the plot function, and
+the other two were the resize (zoom), and clear functions. The plot 
 function is passed the x,y,z meshgrid from the main function, and it first 
 converts the input strings in the uicontrol editbox into three symbolic 
 equations. It checks to see if there is anything in the box, to prevent 
@@ -27,22 +27,23 @@ additional checks to prevent crashes from non-continuous functions, like
 square roots or logarithms, and at the end of the function the i,j, and k 
 components of the vector field are updated to the newly converted values.
 	The resize function has the same functionality as the zoom button 
-already in MATLAB plots, but it is an additional easy of use added to the 
-GUI. The plot is originally the most zoomed out it can go, and when the 
-quiver3 plot was originally created, the default zoom was input with “zoom 
+already in MATLAB plots, but it is an additional ease of use added to the 
+GUI. The plot is originally the most zoomed out it can be, and when the 
+quiver3 plot was created, the default zoom was input with “zoom 
 reset;.” This allowed for a fix when zooming back out would not work. 
 Instead, the function first resets the graph to the default zoom, and only 
 then applies the zoom scale factor specified by the uicontrol slider. 
 	The last function is the clear function. It simply creates an NxNxN 
 array of 0’s dimensionally consistent with the x,y,z meshgrid, and, 
-similarly to the plot function, it simply redefines the u v and w 
+similarly to the plot function, it redefines the u v and w 
 components of the quiver3 plot to be all 0s. 
 	There were several bugs in the coding process. The first of which was 
 figuring out how to create a blank quiver3 plot. It is slightly more 
 complex than creating a blank plot, because one needs to have 6 different 
 variables of NxNxN double quantity for the blank plot to be created. I 
-simply created the x,y,z meshgrid and defined the u,v, and w variables to 
-be 0 times each respective element in the arrays. 
+created the x,y,z meshgrid and defined the u,v, and w variables to 
+be 0 times each respective element in the arrays. This made the u v and w
+components the same data type.
 	I could only get the plot to have the correct input x,y, and z meshgrid 
 by passing the x,y, and z arrays passed through the callback function, 
 which worked perfectly. There were a lot of things I didn’t understand at 
@@ -53,7 +54,7 @@ graphing vector fields is extremely tedious. 3d vector fields are
 impossible to graph, and sometimes online calculators like wolframalpha 
 are not user friendly enough to make it feasible. I developed an 
 easy-to-use GUI that takes function inputs and can plot a 3-dimensional 
-vector field so that I could better visualize them in my class. 
+vector field so that I could better visualize them in my class.
 	The knowledge I have gained on using GUIs in MATLAB could be extremely 
 applicable to my future classes in chemical engineering, perhaps to create 
 a GUI or other software to solve common problems I will come across. I can 
