@@ -52,7 +52,9 @@ function [] = plot(~,~,x,y,z)
     global gui;
     %first callback function to plot the entered values  
     hold on;
-    %had trouble getting the variables to stay as 11x11x11 double like meshgrid
+    %lot of voodoo getting u v and w to dimensonally align with x y z as an
+    %nxnxn double, selecting out undefined functions and replacing them
+    %with 0
     
     %string to symbolic eqpression 1x1
     u = str2sym(gui.iEditBox.String);
@@ -61,7 +63,7 @@ function [] = plot(~,~,x,y,z)
     
     
    
-    %for if the user deletes the starting 0s
+    %for if the user deletes the starting 0s in the edit box, turns them into 0s
     if isempty(u)
         u = 0;
     end
@@ -86,7 +88,7 @@ function [] = plot(~,~,x,y,z)
     w = w + x.*0 + y.*0 + z.*0;
     
     %allows for square root functions and other things with imaginary parts
-    %by setting imaginary things to 0. also fixes log
+    %by setting imaginary things to 0. also fixes log functions
     u(~(u == real(u))) = 0;
     v(~(v == real(v))) = 0;
     w(~(w == real(w))) = 0;

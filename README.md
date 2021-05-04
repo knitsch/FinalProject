@@ -8,3 +8,5 @@ functions as a vector field. Use the clear button to clear the vector field plot
 adjust the zoom level, from the default 1x zoom to a maximum 5x zoom.
 
 e^x or similar functions must be input as exp(x)
+
+ln(x) is input as log(x), and log(x) is input as log(x)/log(10)
