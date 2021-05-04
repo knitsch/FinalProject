@@ -5,10 +5,10 @@ Professor Lanik
 Final Project
 	My final project was to create a GUI interface that takes function 
 inputs for the i, j, and k components of a 3 dimensional vector field, that
- then plots those functions as a quiver3 function. I had a few LA’s sign 
-off on my project due to time worries: Ryan Martz, Laurel Hilger, and Thien
- An Cao. Overall, I was happy with the result, and I am satisfied to have 
-created something extremely applicable in my current classes. 
+ then plots those functions as a quiver3 function. LA Ryan Martz signed 
+off on my project. Overall, I was happy with the result, and I am 
+satisfied to have created something extremely applicable in my current 
+classes. 
 	The code has four functions. The main function sets up the figure, the
  blank quiver3 plot, the pushbuttons to plot and clear the graph, and the 
 slider. The three other functions are all callback functions referenced in
