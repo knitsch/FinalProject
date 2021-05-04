@@ -10,3 +10,7 @@ adjust the zoom level, from the default 1x zoom to a maximum 5x zoom.
 e^x or similar functions must be input as exp(x)
 
 ln(x) is input as log(x), and log(x) is input as log(x)/log(10)
+
+
+I noticed that git doesn't carry asterisks, but instead italicizes, so to type 3x as a function, type 3 asterisk x
+to type yln(x)^2, type y asterisk log(x);
