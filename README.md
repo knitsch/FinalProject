@@ -14,3 +14,5 @@ ln(x) is input as log(x), and log(x) is input as log(x)/log(10)
 
 I noticed that git doesn't carry asterisks, but instead italicizes, so to type 3x as a function, type 3 asterisk x
 to type yln(x)^2, type y asterisk log(x);
+
+Capital X Y and Z will work fine, and other inputs such as m or n will not do anything. Invalid inputs like multiplication without an asterisk will not work.

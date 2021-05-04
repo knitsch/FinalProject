@@ -56,6 +56,16 @@ function [] = plot(~,~,x,y,z)
     %nxnxn double, selecting out undefined functions and replacing them
     %with 0
     
+    %if the user inputs capital x,y,z
+    iUpper = regexp(gui.iEditBox.String, '[A-Z]');
+    gui.iEditBox.String(iUpper) = lower(gui.iEditBox.String(iUpper));
+    
+    jUpper = regexp(gui.jEditBox.String, '[A-Z]');
+    gui.jEditBox.String(jUpper) = lower(gui.jEditBox.String(jUpper));
+    
+    kUpper = regexp(gui.kEditBox.String, '[A-Z]');
+    gui.kEditBox.String(kUpper) = lower(gui.kEditBox.String(kUpper));
+    
     %string to symbolic eqpression 1x1
     u = str2sym(gui.iEditBox.String);
     v = str2sym(gui.jEditBox.String);
@@ -132,6 +142,6 @@ function [] = clear(~,~,x,y,z)
     gui.q3.UData = u;
     gui.q3.VData = v;
     gui.q3.WData = w;
-    
+   
     %could have also just set gui.q3.Visibile = 0 and had plot set it to 1;
 end
