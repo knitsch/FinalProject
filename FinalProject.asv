@@ -18,11 +18,11 @@ function [] = FinalProject()
     
     %sets up the empty quiver3 function;
     gui.q3 = quiver3(x,y,z,u,v,w);
-    gui.q3.Parent.Position = [.4, .05, .55, .9];    %moves the quiver3 plot
+    gui.q3.Parent.Position = [.35, .05, .6, .9];    %moves the quiver3 plot
     zoom reset;% sets the base zoom level
-    xlabel('x');
-    ylabel('y');
-    zlabel('z');
+    xlabel('x
+    ylabel(gui.q3,'y');
+    zlabel(gui.q3,'z');
     %I component
     gui.iTextbox = uicontrol('style','text','units','normalized','position',[.01 .7 .2 .2],'String','i vector component: f(x,y,z) = ','horizontalalignment','left');
     gui.iEditBox = uicontrol('style','edit','units','normalized','position',[.16 .875 .15 .04],'String','0');
